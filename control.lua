@@ -130,7 +130,6 @@ local function on_player_alt_selected_area(event)
 end
 script.on_event(defines.events.on_player_alt_selected_area, on_player_alt_selected_area)
 
-local open_item = {}
 local draw_gui_functions = {
   ["speed-module-requestor"] = function(event)
     local player = game.players[event.player_index]
@@ -139,7 +138,10 @@ local draw_gui_functions = {
       type = "frame",
       direction = "vertical",
     })
-    open_item[event.player_index] = event.item.name
+    if not global.open_item then
+      global.open_item = {}
+    end
+    global.open_item[event.player_index] = event.item.name
     local config_flow = frame.add({
       name = "module_requestor_config_flow",
       type = "flow",
@@ -168,7 +170,10 @@ local draw_gui_functions = {
       type = "frame",
       direction = "vertical",
     })
-    open_item[event.player_index] = event.item.name
+    if not global.open_item then
+      global.open_item = {}
+    end
+    global.open_item[event.player_index] = event.item.name
     local config_flow = frame.add({
       name = "module_requestor_config_flow",
       type = "flow",
@@ -197,7 +202,10 @@ local draw_gui_functions = {
       type = "frame",
       direction = "vertical",
     })
-    open_item[event.player_index] = event.item.name
+    if not global.open_item then
+      global.open_item = {}
+    end
+    global.open_item[event.player_index] = event.item.name
     local config_flow = frame.add({
       name = "module_requestor_config_flow",
       type = "flow",
@@ -256,7 +264,10 @@ local function on_gui_closed(event)
   local frame = player.gui.center.module_requestor_config
   if frame then
     frame.destroy()
-    open_item[event.player_index] = nil
+    if not global.open_item then
+      global.open_item = {}
+    end
+    global.open_item[event.player_index] = nil
   end
 end
 script.on_event(defines.events.on_gui_closed, on_gui_closed)
@@ -268,9 +279,9 @@ local function on_gui_selection_state_changed(event)
       global[event.player_index] = {}
     end
     if event.element.selected_index == 1 then
-      global[event.player_index][open_item[event.player_index]] = nil
+      global[event.player_index][global.open_item[event.player_index]] = nil
     else
-      global[event.player_index][open_item[event.player_index]] = event.element.selected_index - 1
+      global[event.player_index][global.open_item[event.player_index]] = event.element.selected_index - 1
     end
   end
 end
