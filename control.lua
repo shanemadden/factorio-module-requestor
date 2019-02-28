@@ -152,9 +152,9 @@ local draw_gui_functions = {
       type = "drop-down",
       items = {
         {"module-requestor.best-available"},
-        game.item_prototypes["speed-module"].localised_name,
-        game.item_prototypes["speed-module-2"].localised_name,
-        game.item_prototypes["speed-module-3"].localised_name,
+        "[item=speed-module]",
+        "[item=speed-module-2]",
+        "[item=speed-module-3]",
       },
       selected_index = 1,
     })
@@ -184,9 +184,9 @@ local draw_gui_functions = {
       type = "drop-down",
       items = {
         {"module-requestor.best-available"},
-        game.item_prototypes["effectivity-module"].localised_name,
-        game.item_prototypes["effectivity-module-2"].localised_name,
-        game.item_prototypes["effectivity-module-3"].localised_name,
+        "[item=effectivity-module]",
+        "[item=effectivity-module-2]",
+        "[item=effectivity-module-3]",
       },
       selected_index = 1,
     })
@@ -216,9 +216,9 @@ local draw_gui_functions = {
       type = "drop-down",
       items = {
         {"module-requestor.best-available"},
-        game.item_prototypes["productivity-module"].localised_name,
-        game.item_prototypes["productivity-module-2"].localised_name,
-        game.item_prototypes["productivity-module-3"].localised_name,
+        "[item=productivity-module]",
+        "[item=productivity-module-2]",
+        "[item=productivity-module-3]",
       },
       selected_index = 1,
     })

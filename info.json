@@ -1,12 +1,12 @@
 {
     "name": "module-requestor",
-    "version": "0.16.1",
-    "title": "Module Requestor",
+    "version": "0.17.0",
+    "title": "Module Requester",
     "author": "Shane Madden",
     "homepage": "https://github.com/shanemadden/factorio-module-requestor",
-    "factorio_version": "0.16",
+    "factorio_version": "0.17",
     "dependencies": [
-        "base >= 0.16.51"
+        "base >= 0.17"
     ],
     "description": "Provides tools for requesting robot installation and removal of modules from machines"
 }
