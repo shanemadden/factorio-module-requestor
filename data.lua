@@ -9,7 +9,7 @@ local speed_item = {
       icon_size = 32,
     }
   },
-  flags = {},
+  flags = { "mod-openable" },
   stack_size = 1,
   stackable = false,
   selection_color = { r = 0.183, g = 0.902, b = 0.964, a = 1 },
@@ -18,7 +18,6 @@ local speed_item = {
   alt_selection_mode = { "buildable-type", "same-force" },
   selection_cursor_box_type = "entity",
   alt_selection_cursor_box_type = "entity",
-  can_be_mod_opened = true,
 }
 
 local speed_recipe = {
@@ -43,7 +42,7 @@ local efficiency_item = {
       icon_size = 32,
     }
   },
-  flags = {},
+  flags = { "mod-openable" },
   stack_size = 1,
   stackable = false,
   selection_color = { r = 0.39, g = 0.875, b = 0.184, a = 1 },
@@ -52,7 +51,6 @@ local efficiency_item = {
   alt_selection_mode = { "buildable-type", "same-force" },
   selection_cursor_box_type = "entity",
   alt_selection_cursor_box_type = "entity",
-  can_be_mod_opened = true,
 }
 
 local efficiency_recipe = {
@@ -77,7 +75,7 @@ local productivity_item = {
       icon_size = 32,
     }
   },
-  flags = {},
+  flags = { "mod-openable" },
   stack_size = 1,
   stackable = false,
   selection_color = { r = 0.985, g = 0.758, b = 0.078, a = 1 },
@@ -86,7 +84,6 @@ local productivity_item = {
   alt_selection_mode = { "buildable-type", "same-force" },
   selection_cursor_box_type = "entity",
   alt_selection_cursor_box_type = "entity",
-  can_be_mod_opened = true,
 }
 
 local productivity_recipe = {
@@ -111,7 +108,7 @@ local custom_item = {
       icon_size = 32,
     }
   },
-  flags = {},
+  flags = { "mod-openable" },
   stack_size = 1,
   stackable = false,
   selection_color = { r = 0.5, g = 0.5, b = 0.5, a = 1 },
@@ -120,7 +117,6 @@ local custom_item = {
   alt_selection_mode = { "buildable-type", "same-force" },
   selection_cursor_box_type = "entity",
   alt_selection_cursor_box_type = "entity",
-  can_be_mod_opened = true,
 }
 
 local custom_recipe = {

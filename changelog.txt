@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.18.1
+Date: 02. 02. 2020
+  Bugfixes:
+    - Fixed right click to open config - still not working in toolbar but hopefully fixed in base game soon
+---------------------------------------------------------------------------------------------------
 Version: 0.18.0
 Date: 29. 01. 2020
   Changes:
